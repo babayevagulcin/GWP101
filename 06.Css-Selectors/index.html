@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Css Selectors</h1>
+    </header>
+    <section id="form">
+        <div class="regist">
+            <h2>Register Form</h2>
+            <form action="">
+                <label for="name">First name:</label>
+                <br>
+                <input type="text" id="name" size="50" placeholder="Enter a name..." required>
+                <br><br>
+                <label for="last-name">Last name:</label>
+                <br>
+                <input type="text" id="last-name" size="50" placeholder="Enter a surname..." required>
+                <br><br>
+                <label for="email">Email:</label>
+                <br>
+                <input type="email" id="email" size="50" placeholder="Enter an email..." required>
+                <br><br>
+                <label for="password">Password:</label>
+                <br>
+                <input type="password" id="password"  size="50" placeholder="Enter a password..." required>
+                <br><br>
+                <input type="checkbox" id="check" required>
+                <label for="check">Accept all requirments</label>
+                <br><br>
+                <input type="radio" name="radio" id="teach">
+                <label for="teach">Teacher</label>
+                <input type="radio" name="radio" id="student" required>
+                <label for="student">Student</label>
+                <input type="radio" name="radio" id="other">
+                <label for="other">Other</label><br><br>
+                <button type="submit"><a href="#info">Sign in</a></button>
+                <p>Register maybe later: <a href="#info">Skip</a></p>
+
+            </form>
+        </div>
+        <div class="img">
+            <img src="roket.jpg" alt="roket" width="400px" height="400px">
+        </div>
+
+    </section>
+    <section id="info">
+        <div>
+            <img src="roket.jpg" alt="roket" width="450px" height="450px">
+        </div>
+        <div class="user">
+            <h1>User Info</h1>
+       <form action="">
+            <h3>Who are u?</h3>
+            <textarea name="" id="" cols="70" rows="10" placeholder="Add some info about yourself..."
+            required></textarea>
+
+            <br> <br>
+            <input type="file" required>
+            <br><br>
+            <label for="date" class="choose">Choose date:</label>
+            <input type="date" id="date" required>
+            <br><br>
+            <label for="age" class="age">Age:</label>
+            <input type="number" placeholder="your age..." required>
+            <br> <br>
+            <button type="submit"><a href="#city">Save</a></button>
+            <br>
+            <p>Maybe later: <a href="#city">Skip</a></p>
+            <p>Go back and sign in:<a href="#">Sign in</a></p>
+
+        </form>
+        </div>
+    </section>
+    <section id="city">
+        <div class="content">
+            <h1>Change tags' color without class name and id.</h1>
+            <p class="color-dark">CITES</p>
+            <ul>
+                <li>Shusha</li>
+                <li>Qusar</li>
+                <li>Baku</li>
+            </ul>
+            <ol>
+                <li>Ismayilli</li>
+                <li>Shamaki</li>
+                <li>Sirvan</li>
+                <li>Qazag</li>
+            </ol>
+            <p>Lorem.</p>
+            <p class="color-gold">Lorem, ipsum.</p>
+            <p><a href="#form">Go back</a>
+                to first section!
+            </p>
+        </div>
+    </section>
+  
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+/* first section */
+header{
+    display: flex;
+    justify-content: center;
+    opacity: 0.7;
+}
+#form{
+    height: 90vh;
+    background-color: rgba(17, 56, 56, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.regist{
+    margin-right: 80px;
+}
+.regist h2{
+    text-align: center;
+}
+.regist label:nth-of-type(1){
+    color: rgb(80, 66, 21);
+}
+.regist label:nth-of-type(2){
+    color: rgb(53, 42, 150);
+}
+.regist label:nth-of-type(3){
+    color: rgb(22, 92, 63);
+}
+.regist label:nth-of-type(4){
+    color: rgb(129, 54, 54);
+}
+.regist input::placeholder{
+    color: #6d6a6a;
+}
+.regist input:focus::placeholder{
+    background-color: #6e9299;
+    color: #fff;
+}
+.regist input[type=radio]{
+    accent-color: rgb(45, 94, 94);
+}
+.regist button{
+    background-color: #193b3b;
+    border: 1px solid;
+}
+.regist button a{
+    color: wheat;
+    text-decoration: none;
+}
+
+/* second section */
+#info{
+    background-color: bisque;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.user{
+    margin-left: 50px;
+}
+#info h1{
+   text-align: center;
+}
+textarea{
+    resize: none;
+}
+#info .choose{
+    color: rgb(92, 92, 212);
+}
+#info .age{
+    color: rgb(5, 53, 5);
+}
+#info button{
+    padding: 5px 10px;
+    background-color: darkgrey;
+    color: #fff;
+    border: 1px solid #000;
+}
+#info button:hover{
+    background-color: black;
+    transition: all 0.4s;
+}
+#info button a{
+    color: rgb(7, 7, 7);
+    text-decoration: none;
+}
+#info button a:hover{
+    color: #fff;
+}
+/* third section */
+
+#city{
+    height: 90vh;
+    background-color: rgba(27, 77, 58, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.color-dark{
+    margin-left: 40px;
+    color: rgb(44, 73, 73) ;
+}
+.content ul{
+    color: rgb(114, 63, 63);
+}
+.color-gold{
+    color: rgb(97, 78, 29);
+}
