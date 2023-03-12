@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    text-align: center;
+    padding-bottom: 20px;
+}
+/* srction 1 */
+.one-image{
+    height: 100vh;
+    background-image:url(./img2/cat.jpg) ;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.one-image div p{
+    padding: 10px 0;
+}
+.link a{
+    font-size: 19px;
+    font-weight: bold;
+}
+.content{
+  padding-left: 50px;
+  padding-top: 50px;
+}
+.content a{
+    font-size: 19px;
+    font-weight: bold;
+}
+.content .w3-link{
+    padding-bottom: 20px;
+}
+
+/* section 2 */
+.two-image{
+    height: 100vh;
+    background-image:url(./img2/foto.jpg) ;
+    background-size: cover;
+}
+/* section 3 */
+.three-image{
+    height: 100vh;
+    background-image:url(./img2/dog.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+/* section 4 */
+.four-image{
+    display: flex;
+    justify-content: center;
+}
+
+.left-img{
+    height: 100vh;
+    background-image:url(./img2/pingu.jpg) ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top left ;
+    width: 50%;
+
+}
+.right-img{
+    height: 100vh;
+    background-image:url(./img2/vinni.png) ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    width: 50%;
+
+}
