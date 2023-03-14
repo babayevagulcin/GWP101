@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+/* Navbar */
+nav{
+    background-color:white;
+    display: flex;
+    justify-content: space-between;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+nav .logo{
+    margin-left: 70px;
+
+}
+nav ul li{
+    padding: 10px 30px;
+    border: 1px solid transparent;
+
+}
+nav ul li:hover{
+    background-color: rgb(95, 119, 172);
+    border-color: black;
+
+}
+
+nav ul li a:hover{
+    color:#fff;
+}
+
+nav ul li i{
+    color: darkblue;
+}
+nav ul li i:hover{
+    color: #ebe9e9;
+}
+/* Content */
+.bg-img{
+    height: 100vh;
+    background-image: url(img/img.jpg);
+    background-size: cover;
+}
+
+.text{
+    width: 50%;
+    padding-top: 15%;
+    padding-left: 30px;
+}
+.text h1{
+    font-family: 'Kanit', sans-serif; 
+    padding-bottom: 30px;
+    text-shadow: 5px 5px 5px rgb(24, 72, 161);
+}
+.text p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-bottom: 30px;
+    text-shadow: 5px 5px 5px rgb(24, 72, 161);
+}
+.text a{
+    border: 2px solid black;
+    padding: 10px;
+}
+.text a:hover{
+    background-color: rgb(16, 76, 104);
+    color: aliceblue;
+}
+/* Footer */
+.code{
+    height: 70vh;
+    background-image: url(img/web.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.footer{
+    height: 70vh;
+    background-color: rgba(24, 23, 23, 0.9);
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    padding-top: 25vh;
+}
+
+.footer .company h3{
+    padding-bottom: 10px;
+    color: #fff;
+}
+
+.footer ul li{
+    line-height: 30px;
+    color: #fff;
+}
+.footer .icon{
+  display: inline;
+  padding: 5px;
+}
+.footer .icon i{
+    color: #fff;
+}
+.underline{
+    border-bottom: 1px solid red;
+    width: 50%;
+}
+
+
+
+
+        
+
+
+
