@@ -27,7 +27,14 @@
 }
 .container nav ul li a{
     color: black;
+    padding: 20px;
+    /* border: 1px solid transparent; */
 }
+.container nav ul li :hover{
+ background-color: blue;
+ border: black;
+}
+
 /* SECTION CONTENT */
 .content{
     height: 80vh;
@@ -69,8 +76,14 @@
 }
 .div-box .box1:nth-child(2){
     position: absolute;
-    top: 0;
-    right: 30px;
+    right: 0;
+}
+.div-box .box2{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% -50%);
+
 }
 
 
