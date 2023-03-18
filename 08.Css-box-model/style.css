@@ -73,13 +73,14 @@ nav ul li i:hover{
     background-color: rgb(16, 76, 104);
     color: aliceblue;
 }
-/* Footer */
+/* section */
 .code{
     height: 70vh;
     background-image: url(img/web.jpg);
     background-size: cover;
     background-attachment: fixed;
 }
+/* Footer */
 .footer{
     height: 70vh;
     background-color: rgba(24, 23, 23, 0.9);
