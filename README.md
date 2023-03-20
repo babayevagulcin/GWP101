@@ -1,7 +1,7 @@
 # GWP101
 ##Frontend websites  
 
-##Website projects . Developed with html and a little css was used
+##Website projects . Developed with html and css was used
 
 * 03.HTML: https://illustrious-sherbet-1bec6f.netlify.app
 * 04.Html-form-table: https://fabulous-panda-028f2b.netlify.app
