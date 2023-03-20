@@ -6,7 +6,7 @@
 * 03.HTML:
 * 04.Html-form-table:
 * 05.FirstHtmlFulSite:
-* 06.Css-Selectors:
+* 06.Css-Selectors: https://legendary-valkyrie-719e3f.netlify.app
 * 07.Css-Background: https://soft-biscotti-325781.netlify.app
 * 08.Css-box-model: https://curious-genie-7d7e58.netlify.app
 * 10.CSS-Responsive: https://stirring-hummingbird-122023.netlify.app
