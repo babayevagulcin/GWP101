@@ -1,0 +1,285 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    color: #000;
+}
+/* HEADER */
+header{
+    width: 100%;
+    background-color: #fffaed;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+.container{
+    max-width: 70%;
+    margin: 0 auto;
+}
+header .container .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+header .container .logo{
+    color:#201e1e ;
+    background-color:#ddc282;
+    border: 1px solid #ddc282 ;
+    padding: 15px 25px;
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+header .container .logo:hover{
+    color: #ddc282;
+    background-color: #201e1e;
+    border: 1px solid #201e1e;
+}
+header .container .fa-bars{
+    display: none;
+}
+header .container nav ul{
+    display: flex;
+    gap: 50px;
+}
+header .container nav ul li a:hover{
+    color: #e9b949;
+}
+/* SECTION BIOGRAPHY */
+#biography{
+    background-color: #fffaed;
+    padding-top: 30px;
+}
+#biography .biography-content{
+    height: 80vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#biography .biography h1{
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(1, 24, 48);
+    
+}
+#biography .biography h1::before{
+    content: "";
+    border: 1px solid #e9b949;
+    display: block;
+    width: 50px;
+}
+#biography .biography p{
+    letter-spacing: 2px;
+    padding-bottom: 20px;
+    color: rgb(6, 68, 129);
+}
+#biography .biography button{
+    padding: 8px 15px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    background-color: #e9b949;
+    border-radius: 10px;
+    border:none ;
+}
+#biography .biography button:hover{
+    color: #e9b949;
+    background-color: #000;
+}
+#biography .biography .icon{
+    display: flex;
+    gap: 20px;
+    padding-top: 30px;
+    letter-spacing: 2px;
+}
+#biography .biography .icon i{
+    color: rgb(1, 24, 48);
+}
+#biography .biography .icon i:hover{
+    color: #e9b949;
+}
+#biography img{
+    width: 200px;
+    border-radius: 5px;
+    position: relative;
+    top: -15px;
+    right: 15px;
+}
+#biography .border{
+    border: 2px solid #e9b949;
+    border-radius: 5px;
+}
+/* SECTION ABOUT */
+#about .about-content{
+    height: 80vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    column-gap: 70px;
+}
+#about img{
+    width: 200px;
+    border-radius: 5px;
+    position: relative;
+    top: -10px;
+    left: 15px;
+}
+#about .border{
+    border: 2px solid #e9b949;
+    border-radius: 5px;
+}
+#about .about{
+    width: 50%;
+}
+#about .about h1::after{
+    content: "";
+    border: 1px solid #e9b949;
+    border-radius: 5px;
+    display: block;
+    width: 50px;
+}
+#about .about h1,p{
+    padding: 15px 0 ;
+    letter-spacing: 1px;
+}
+#about .about h1{
+    color: rgb(2, 26, 51);
+}
+#about .about p{
+    font-size: 12px;
+    color: rgba(6, 68, 129,0.7);
+}
+#about .about button{
+    padding: 8px 15px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    background-color: #e9b949;
+    border-radius: 10px;
+    border:none ;
+}
+#about .about button:hover{
+    color: #e9b949;
+    background-color: #000;
+}
+/* SECTION CARDS */
+#cards{
+    height: 80vh;
+    background-color: rgb(237, 243, 245);
+}
+#cards .card-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#cards h1{
+    text-align: center;
+    padding: 40px 0;
+    letter-spacing: 2px;
+    color: rgb(2, 26, 51);
+    font-size: 35px;
+}
+#cards .card{
+    background-color: #fff;
+    padding: 35px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+#cards .card:hover{
+    background-color: #e9b949;
+}
+#cards .card i{
+    font-size: 25px;
+    color: rgb(2, 26, 55);
+
+}
+#cards .card h5{
+    letter-spacing: 3px;
+    color: rgb(2, 26, 51);
+}
+#cards .card p{
+    font-size: 12px;
+    color: rgba(4, 31, 59, 0.7);
+}
+#cards .card i:hover{
+    color: #fff;
+}
+#cards .card h5:hover{
+    color: #fff;
+}
+#cards .card p:hover{
+    color: #fff;
+}
+#cards .container h1::after{
+    content: "";
+    border: 2px solid #e9b949;
+    display: block;
+    width: 60px;
+    margin: 10px auto;
+
+}
+#cards .container h5::after{
+    content: "";
+    border: 1px solid #e9b949;
+    display: block;
+    width: 50px;
+    margin: 10px auto;
+}
+/* FOOTER */
+#footer{
+    height: 25vh;
+    background-color: #201e1e;
+    display: flex;
+    align-items: center;
+}
+#footer .footer-icon{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-size: 20px;
+    padding-bottom: 25px;
+}
+#footer .footer-icon i{
+    color: #e9b949;
+}
+#footer .footer-icon i:hover{
+    color: #fff;
+}
+#footer .author{
+    color: rgb(74, 99, 126);
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+/* RESPONSIVE */
+@media only screen and (max-width:991px){
+    /* SECTION BIOGRAPHY-RESPONSIVE */
+    #biography .biography-content{
+        height: 120vh;
+        flex-direction: column;
+    }
+    /* SECTION ABOUT-RESPONSIVE */
+    #about .about-content{
+        height: 130vh;
+        flex-direction: column;
+    }
+    /* SECTION CARDS-RESPONSIVE */
+    #cards{
+        height: 150vh;
+    }
+    #cards .card-content{
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width:767px){
+
+    /* HEADER_RESPONSIVE */
+    header .container nav{
+        display: none;
+    }
+    header .container .fa-bars{
+        display: block;
+    }
+}
+
+
