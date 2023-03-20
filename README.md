@@ -7,11 +7,11 @@
 * 04.Html-form-table
 * 05.FirstHtmlFulSite
 * 06.Css-Selectors
-* 07.Css-Background  https://moonlit-valkyrie-4018a1.netlify.app
+* 07.Css-Background: https://moonlit-valkyrie-4018a1.netlify.app
 * 08.Css-box-model
 * 10.CSS-Responsive
 * 11.CSS-Grid
-* https://dancing-piroshki-ccb1f2.netlify.app
+* 12.PortfolioMiniWebPage: https://dancing-piroshki-ccb1f2.netlify.app
 
 
 
