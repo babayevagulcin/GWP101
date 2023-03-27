@@ -161,12 +161,11 @@ html {
 
 /* RESPONSIVE */
 @media only screen and (max-width:992px) {
-        /* SECTION 1 */
+    /* SECTION 1 */
     #check-out .content {
         flex-wrap: wrap;
         height: auto;
     }
-
     /* SECTION 2 */
     #explare .card-content {
         flex-direction: column;
