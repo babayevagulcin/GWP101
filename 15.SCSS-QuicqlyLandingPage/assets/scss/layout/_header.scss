@@ -1,0 +1,56 @@
+header {
+  background-color: $border;
+  width: 100%;
+  .navbar {
+    h4 {
+      font-family: "Plus Jakarta Sans";
+      color: $pure-white;
+      font-size: 24px;
+      line-height: 30px;
+      font-weight: 700;
+    }
+    nav {
+      ul {
+        @include flexBox;
+        gap: 32px;
+        li {
+          a {
+            color: $pure-white;
+            font-family: "Plus Jakarta Sans";
+          }
+        }
+      }
+    }
+    .btn {
+      .sign-up {
+        border: none;
+        border-radius: 8px;
+        color: $darkest-primary;
+        background-color: $primary-light;
+      }
+      .log-in {
+        border: none;
+        color: $pure-white;
+        background-color: transparent;
+      }
+    }
+
+  }
+  @media only screen and (max-width: 767px) {
+    .navbar{
+      nav {
+      ul {
+        li {
+          display: none;
+        }
+      }
+    }
+    .btn {
+      .log-in,
+      .sign-up {
+        display: none;
+      }
+    }
+    }
+  }
+}

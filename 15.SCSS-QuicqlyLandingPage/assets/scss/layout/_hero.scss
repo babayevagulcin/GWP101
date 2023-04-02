@@ -1,0 +1,19 @@
+#hero{
+    .hero{
+        @include flexBox;
+        height: 100%;
+        .hero-banner{
+            padding: 20px;
+        }
+        .hero-banner-img{
+            .bg-img{
+                width: 415px;
+                height: 490px;
+            }
+            .ui-element-1{
+                width: 432px;
+                height: 193px;
+            }
+        }
+    }
+}
