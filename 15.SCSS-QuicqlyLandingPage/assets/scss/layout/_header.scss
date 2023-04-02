@@ -1,9 +1,8 @@
 header {
-  background-color: $border;
+  background-color: $primary-dark;
   width: 100%;
   .navbar {
     h4 {
-      font-family: "Plus Jakarta Sans";
       color: $pure-white;
       font-size: 24px;
       line-height: 30px;
@@ -16,41 +15,50 @@ header {
         li {
           a {
             color: $pure-white;
-            font-family: "Plus Jakarta Sans";
           }
         }
       }
     }
     .btn {
       .sign-up {
+        width: 82px;
+        height: 41px;
         border: none;
         border-radius: 8px;
         color: $darkest-primary;
         background-color: $primary-light;
       }
       .log-in {
+        width: 72px;
+        height: 41px;
         border: none;
         color: $pure-white;
         background-color: transparent;
       }
     }
-
+    .fa-bars {
+      display: none;
+      color: $pure-white;
+    }
   }
   @media only screen and (max-width: 767px) {
-    .navbar{
+    .navbar {
       nav {
-      ul {
-        li {
+        ul {
+          li {
+            display: none;
+          }
+        }
+      }
+      .btn {
+        .log-in,
+        .sign-up {
           display: none;
         }
       }
     }
-    .btn {
-      .log-in,
-      .sign-up {
-        display: none;
-      }
-    }
+    .fa-bars {
+      display: block;
     }
   }
 }

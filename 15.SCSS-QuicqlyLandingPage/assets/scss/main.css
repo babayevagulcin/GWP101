@@ -5,10 +5,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;500;700&family=Grand+Hotel&family=Plus+Jakarta+Sans:wght@200;400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,400&display=swap");
 * {
   list-style: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 a {
   text-decoration: none;
+  font-family: "Plus Jakarta Sans";
 }
 
 html,
@@ -52,7 +56,6 @@ tt,
 var,
 b,
 u,
-i,
 center,
 dl,
 dt,
@@ -98,6 +101,7 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  font-family: "Plus Jakarta Sans";
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -150,9 +154,9 @@ table {
 
 header {
   background-color: #20484F;
+  width: 100%;
 }
 header .navbar h4 {
-  font-family: "Plus Jakarta Sans";
   color: #fff;
   font-size: 24px;
   line-height: 30px;
@@ -166,31 +170,237 @@ header .navbar nav ul {
 }
 header .navbar nav ul li a {
   color: #fff;
-  font-family: "Plus Jakarta Sans";
 }
 header .navbar .btn .sign-up {
+  width: 82px;
+  height: 41px;
   border: none;
   border-radius: 8px;
-  color: #20484F 20%;
-  background-color: #b8e4da;
+  color: #072125;
+  background-color: #B8E4DA;
 }
 header .navbar .btn .log-in {
-  border: navajowhite;
+  width: 72px;
+  height: 41px;
+  border: none;
   color: #fff;
   background-color: transparent;
 }
 header .navbar .fa-bars {
   display: none;
+  color: #fff;
 }
 @media only screen and (max-width: 767px) {
-  header nav ul li {
+  header .navbar nav ul li {
     display: none;
   }
-  header .btn .log-in,
-  header .btn .sign-up {
+  header .navbar .btn .log-in,
+  header .navbar .btn .sign-up {
     display: none;
   }
   header .fa-bars {
     display: block;
   }
+}
+
+#hero {
+  height: 150vh;
+}
+#hero .hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding-top: 200px;
+}
+#hero .hero .hero-banner {
+  position: relative;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+}
+#hero .hero .hero-banner h5 {
+  font-size: 18px;
+  line-height: 23px;
+  color: #20484F;
+}
+#hero .hero .hero-banner h1 {
+  font-size: 64px;
+  line-height: 120%;
+  color: #072125;
+  font-weight: 700;
+}
+#hero .hero .hero-banner p {
+  font-size: 24px;
+  line-height: 150%;
+}
+#hero .hero .hero-banner .btn {
+  display: flex;
+  gap: 20px;
+}
+#hero .hero .hero-banner .btn .sign-up {
+  width: 136px;
+  height: 58px;
+  border: none;
+  border-radius: 8px;
+  background-color: #20484F;
+  color: #fff;
+}
+#hero .hero .hero-banner .btn .learn-more {
+  width: 168px;
+  height: 58px;
+  border: 1px solid rgba(32, 72, 79, 0.1);
+  border-radius: 8px;
+  background-color: #fff;
+}
+#hero .hero .hero-banner .ui-31 {
+  position: absolute;
+  top: 10%;
+  left: 40%;
+  z-index: -1;
+}
+#hero .hero .hero-banner-img {
+  display: flex;
+  width: 50%;
+  position: relative;
+}
+#hero .hero .hero-banner-img .bg-img {
+  width: 415px;
+  height: 490px;
+  position: absolute;
+  top: 9%;
+  left: 11%;
+}
+#hero .hero .hero-banner-img .ui-element-1 {
+  width: 432px;
+  height: 193px;
+  border-radius: 12px;
+  position: absolute;
+  bottom: 0;
+}
+#hero .hero .hero-banner-img .ui-element-2 {
+  width: 389px;
+  height: 107px;
+  position: absolute;
+  top: 10%;
+  left: 30%;
+}
+#hero .hero .hero-banner-img .ui-element-21 {
+  width: 541px;
+  height: 601px;
+}
+
+#team {
+  height: 170vh;
+}
+#team .team .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+}
+#team .team .content h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  color: #072125;
+}
+#team .team .content p {
+  text-align: center;
+  width: 50%;
+  font-size: 16px;
+  line-height: 150%;
+  color: #20484F;
+}
+#team .team .cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 57px;
+  margin-top: 65px;
+}
+#team .team .cards img {
+  width: 250px;
+  height: 250px;
+  border-radius: 24px;
+}
+#team .team .cards h4 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 50px;
+  color: #072125;
+}
+#team .team .cards p {
+  text-align: center;
+  font-size: 18px;
+  color: #20484F;
+}
+#team .team .cards .social-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+#team .team .cards .social-icon a {
+  color: #072125;
+  line-height: 50px;
+}
+
+footer {
+  background-color: #072125;
+  color: #fff;
+  height: 60vh;
+}
+footer .footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 64px 0;
+}
+footer .footer .form {
+  position: relative;
+}
+footer .footer .form h3 {
+  font-weight: 700;
+  font-size: 32px;
+  padding-bottom: 31px;
+}
+footer .footer .form label {
+  padding-bottom: 38px;
+}
+footer .footer .form input[type=email] {
+  border-radius: 8px;
+  width: 330px;
+  height: 48px;
+  border: 1px solid #072125;
+  padding-left: 24px;
+}
+footer .footer .form button {
+  background: #B8E4DA;
+  border-radius: 0px 8px 8px 0px;
+  border: none;
+  width: 136px;
+  height: 48px;
+  position: absolute;
+  left: 85%;
+}
+footer .footer .list {
+  display: flex;
+  gap: 75px;
+}
+footer .footer .list h5 {
+  line-height: 32px;
+}
+footer .footer .list li {
+  line-height: 32px;
+}
+footer .footer .list li a {
+  color: #B8E4DA;
+}
+footer .text {
+  text-align: center;
+  font-weight: 700;
+  font-size: 18px;
 }/*# sourceMappingURL=main.css.map */

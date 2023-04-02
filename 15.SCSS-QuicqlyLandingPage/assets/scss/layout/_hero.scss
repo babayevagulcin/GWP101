@@ -1,19 +1,88 @@
-#hero{
-    .hero{
-        @include flexBox;
-        height: 100%;
-        .hero-banner{
-            padding: 20px;
+#hero {
+  height: 150vh;
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding-top: 200px;
+    .hero-banner {
+      position: relative;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      row-gap: 32px;
+      h5 {
+        font-size: 18px;
+        line-height: 23px;
+        color: $primary-dark;
+      }
+      h1 {
+        font-size: 64px;
+        line-height: 120%;
+        color: $darkest-primary;
+        font-weight: 700;
+      }
+      p {
+        font-size: 24px;
+        line-height: 150%;
+      }
+      .btn {
+        display: flex;
+        gap: 20px;
+        .sign-up {
+          width: 136px;
+          height: 58px;
+          border: none;
+          border-radius: 8px;
+          background-color: $primary-dark;
+          color: $pure-white;
         }
-        .hero-banner-img{
-            .bg-img{
-                width: 415px;
-                height: 490px;
-            }
-            .ui-element-1{
-                width: 432px;
-                height: 193px;
-            }
+        .learn-more {
+          width: 168px;
+          height: 58px;
+          border: 1px solid rgba(32, 72, 79, 0.1);
+          border-radius: 8px;
+          background-color: $pure-white;
         }
+      }
+      .ui-31{
+        position: absolute;
+        top: 10%;
+        left: 40%;
+        z-index: -1;
+      }
     }
+    .hero-banner-img {
+      display: flex;
+      width: 50%;
+      position: relative;
+      .bg-img {
+        width: 415px;
+        height: 490px;
+        position: absolute;
+        top: 9%;
+        left: 11%;
+
+      }
+      .ui-element-1 {
+        width: 432px;
+        height: 193px;
+        border-radius: 12px;
+        position: absolute;
+        bottom:0;
+      }
+      .ui-element-2 {
+        width: 389px;
+        height: 107px;
+        position: absolute;
+        top: 10%;
+        left: 30%;
+      }
+      .ui-element-21 {
+        width: 541px;
+        height: 601px;
+      }
+    }
+  }
 }

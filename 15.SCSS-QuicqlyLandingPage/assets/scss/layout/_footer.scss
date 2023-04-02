@@ -1,0 +1,55 @@
+footer {
+  background-color: $darkest-primary;
+  color: $pure-white;
+  height: 60vh;
+  .footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 64px 0;
+    .form {
+      position: relative;
+      h3 {
+        font-weight: 700;
+        font-size: 32px;
+        padding-bottom: 31px;
+      }
+      label {
+        padding-bottom: 38px;
+      }
+      input[type="email"] {
+        border-radius: 8px;
+        width: 330px;
+        height: 48px;
+        border: 1px solid $darkest-primary;
+        padding-left: 24px;
+      }
+      button {
+        background: $primary-light;
+        border-radius: 0px 8px 8px 0px;
+        border: none;
+        width: 136px;
+        height: 48px;
+        position: absolute;
+        left: 85%;
+      }
+    }
+    .list {
+      display: flex;
+      gap: 75px;
+      h5 {
+        line-height: 32px;
+      }
+      li {
+        line-height: 32px;
+        a {
+          color: $primary-light;
+        }
+      }
+    }
+  }
+  .text {
+    text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+  }
+}

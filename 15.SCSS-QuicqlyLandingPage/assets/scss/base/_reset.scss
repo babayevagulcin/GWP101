@@ -4,10 +4,17 @@
 */
 * {
     list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
   }
   a{
     text-decoration: none;
+    font-family:'Plus Jakarta Sans';
   }
+
+
   html,
   body,
   div,
@@ -94,6 +101,7 @@
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
+    font-family:'Plus Jakarta Sans';
   }
   /* HTML5 display-role reset for older browsers */
   article,
