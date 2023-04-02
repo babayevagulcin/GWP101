@@ -14,6 +14,7 @@
 * 12.PortfolioMiniWebPage: https://dancing-piroshki-ccb1f2.netlify.app
 * 13.ResponsiveTwoSection: https://shimmering-cascaron-240783.netlify.app
 * 14.Responsvie-page: https://majestic-beignet-aacad6.netlify.app
+* 15.SCSS-QuicqlyLandingPage: https://venerable-halva-59777d.netlify.app
 
 
 
