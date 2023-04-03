@@ -234,24 +234,26 @@
           <div class="form">
             <h3>Start your free trial</h3>
             <form action="">
-              <input id="features" type="checkbox" />
-              <label for="features">All features</label>
-              &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <input type="checkbox" id="features" />
+              <label class="features" for="features">All features</label>
               <input type="checkbox" id="unlimited" />
               <label for="unlimited">Unlimited projects</label><br />
               <input type="checkbox" id="free" />
-              <label for="free">Free onboarding</label>
-              &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <label class="free" for="free">Free onboarding</label>
               <input type="checkbox" id="payment" />
-              <label for="payment">No payment needed</label><br />
-              <input
-                type="email"
-                name="email"
-                id="email"
-                placeholder="Enter your email"
-              />
-              <button>Sign up</button>
+              <label for="payment">No payment needed</label>
+              <br />
+              <div class="mail">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Enter your email"
+                />
+              </div>
+              <div class="footer-button">
+                <button>Sign up</button>
+              </div>
             </form>
           </div>
           <div class="list">
@@ -285,7 +287,7 @@
           </div>
         </div>
       </div>
-      <hr>
+      <hr />
       <h5 class="text">Quickly.</h5>
     </footer>
 

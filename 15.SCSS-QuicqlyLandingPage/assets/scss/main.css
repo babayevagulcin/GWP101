@@ -198,20 +198,20 @@ header .navbar .fa-bars {
   header .navbar .btn .sign-up {
     display: none;
   }
-  header .fa-bars {
+  header .navbar .fa-bars {
     display: block;
   }
 }
 
 #hero {
-  height: 150vh;
+  padding-top: 80px;
+  padding-bottom: 24px;
 }
 #hero .hero {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   height: 100%;
-  padding-top: 200px;
 }
 #hero .hero .hero-banner {
   position: relative;
@@ -283,16 +283,27 @@ header .navbar .fa-bars {
   width: 389px;
   height: 107px;
   position: absolute;
-  top: 10%;
-  left: 30%;
+  top: 12%;
+  left: 35%;
 }
 #hero .hero .hero-banner-img .ui-element-21 {
   width: 541px;
   height: 601px;
 }
+@media only screen and (max-width: 767px) {
+  #hero .hero {
+    flex-direction: column;
+  }
+  #hero .hero .hero-banner {
+    width: 100%;
+  }
+  #hero .hero .hero-banner-img {
+    width: 100%;
+  }
+}
 
 #team {
-  height: 170vh;
+  padding: 94px;
 }
 #team .team .content {
   display: flex;
@@ -302,7 +313,7 @@ header .navbar .fa-bars {
   gap: 16px;
 }
 #team .team .content h2 {
-  font-weight: 700;
+  text-align: center;
   font-size: 40px;
   line-height: 50px;
   color: #072125;
@@ -318,6 +329,7 @@ header .navbar .fa-bars {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   gap: 57px;
   margin-top: 65px;
 }
@@ -327,32 +339,41 @@ header .navbar .fa-bars {
   border-radius: 24px;
 }
 #team .team .cards h4 {
-  text-align: center;
   font-weight: 700;
   font-size: 24px;
   line-height: 50px;
   color: #072125;
 }
 #team .team .cards p {
-  text-align: center;
   font-size: 18px;
   color: #20484F;
 }
 #team .team .cards .social-icon {
   display: flex;
-  justify-content: center;
-  align-items: center;
   gap: 40px;
+  padding-top: 20px;
 }
 #team .team .cards .social-icon a {
   color: #072125;
   line-height: 50px;
 }
+#team .team .cards .social-icon a i {
+  border: 1px solid grey;
+  border-radius: 50%;
+  padding: 10px;
+}
+@media only screen and (max-width: 767px) {
+  #team .team .content p {
+    width: 100%;
+  }
+  #team .team .cards {
+    flex-direction: column;
+  }
+}
 
 footer {
   background-color: #072125;
   color: #fff;
-  height: 60vh;
 }
 footer .footer {
   display: flex;
@@ -365,42 +386,82 @@ footer .footer .form {
 footer .footer .form h3 {
   font-weight: 700;
   font-size: 32px;
-  padding-bottom: 31px;
+  padding-bottom: 15px;
+}
+footer .footer .form .features {
+  padding-right: 70px;
+}
+footer .footer .form .free {
+  padding-right: 25px;
 }
 footer .footer .form label {
-  padding-bottom: 38px;
+  padding: 16px 0;
 }
-footer .footer .form input[type=email] {
+footer .footer .form .mail {
+  padding-top: 23px;
+}
+footer .footer .form .mail input {
   border-radius: 8px;
   width: 330px;
   height: 48px;
   border: 1px solid #072125;
   padding-left: 24px;
+  padding-bottom: 23px;
 }
-footer .footer .form button {
+footer .footer .form .footer-button button {
   background: #B8E4DA;
   border-radius: 0px 8px 8px 0px;
   border: none;
   width: 136px;
   height: 48px;
   position: absolute;
+  bottom: 0;
   left: 85%;
 }
-footer .footer .list {
+footer .list {
   display: flex;
   gap: 75px;
 }
-footer .footer .list h5 {
+footer .list h5 {
   line-height: 32px;
 }
-footer .footer .list li {
+footer .list li {
   line-height: 32px;
 }
-footer .footer .list li a {
+footer .list li a {
   color: #B8E4DA;
 }
-footer .text {
+
+.text {
   text-align: center;
   font-weight: 700;
   font-size: 18px;
+  padding: 20px 0;
+}
+
+@media only screen and (max-width: 767px) {
+  .footer {
+    flex-direction: column;
+    width: 100%;
+  }
+  .footer .form {
+    position: static;
+  }
+  .footer .form .mail input {
+    padding-left: 14px;
+    padding-top: 18px;
+  }
+  .footer .form .list {
+    padding-top: 50px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer .form .list h5 {
+    text-align: center;
+  }
+  .footer .form .list ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }/*# sourceMappingURL=main.css.map */

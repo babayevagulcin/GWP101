@@ -1,11 +1,9 @@
 #hero {
-  height: 150vh;
+  padding-top: 80px;
+  padding-bottom: 24px;
   .hero {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flexBox;
     height: 100%;
-    padding-top: 200px;
     .hero-banner {
       position: relative;
       width: 50%;
@@ -46,7 +44,7 @@
           background-color: $pure-white;
         }
       }
-      .ui-31{
+      .ui-31 {
         position: absolute;
         top: 10%;
         left: 40%;
@@ -63,25 +61,34 @@
         position: absolute;
         top: 9%;
         left: 11%;
-
       }
       .ui-element-1 {
         width: 432px;
         height: 193px;
         border-radius: 12px;
         position: absolute;
-        bottom:0;
+        bottom: 0;
       }
       .ui-element-2 {
         width: 389px;
         height: 107px;
         position: absolute;
-        top: 10%;
-        left: 30%;
+        top: 12%;
+        left: 35%;
       }
       .ui-element-21 {
         width: 541px;
         height: 601px;
+      }
+    }
+
+    @media only screen and (max-width: 767px) {
+      flex-direction: column;
+      .hero-banner{
+        width: 100%;
+      }
+      .hero-banner-img{
+        width: 100%;
       }
     }
   }
