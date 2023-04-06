@@ -297,7 +297,13 @@ header .navbar .fa-bars {
   #hero .hero .hero-banner {
     width: 100%;
   }
+  #hero .hero .hero-banner img {
+    width: 100%;
+  }
   #hero .hero .hero-banner-img {
+    width: 100%;
+  }
+  #hero .hero .hero-banner-img img {
     width: 100%;
   }
 }
@@ -329,7 +335,6 @@ header .navbar .fa-bars {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
   gap: 57px;
   margin-top: 65px;
 }
@@ -337,6 +342,9 @@ header .navbar .fa-bars {
   width: 250px;
   height: 250px;
   border-radius: 24px;
+}
+#team .team .cards img:hover {
+  opacity: 0.7;
 }
 #team .team .cards h4 {
   font-weight: 700;
@@ -369,6 +377,9 @@ header .navbar .fa-bars {
   #team .team .cards {
     flex-direction: column;
   }
+  #team .team .cards img {
+    width: 100%;
+  }
 }
 
 footer {
@@ -381,7 +392,8 @@ footer .footer {
   padding: 64px 0;
 }
 footer .footer .form {
-  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 footer .footer .form h3 {
   font-weight: 700;
@@ -399,16 +411,16 @@ footer .footer .form label {
 }
 footer .footer .form .mail {
   padding-top: 23px;
+  position: relative;
 }
 footer .footer .form .mail input {
   border-radius: 8px;
-  width: 330px;
+  width: 100%;
   height: 48px;
   border: 1px solid #072125;
   padding-left: 24px;
-  padding-bottom: 23px;
 }
-footer .footer .form .footer-button button {
+footer .footer .form .mail button {
   background: #B8E4DA;
   border-radius: 0px 8px 8px 0px;
   border: none;
@@ -416,7 +428,7 @@ footer .footer .form .footer-button button {
   height: 48px;
   position: absolute;
   bottom: 0;
-  left: 85%;
+  right: 0;
 }
 footer .list {
   display: flex;
@@ -445,21 +457,18 @@ footer .list li a {
     width: 100%;
   }
   .footer .form {
-    position: static;
+    align-items: center;
+    height: 100%;
   }
-  .footer .form .mail input {
-    padding-left: 14px;
-    padding-top: 18px;
-  }
-  .footer .form .list {
-    padding-top: 50px;
+  .footer .list {
     flex-direction: column;
     align-items: center;
+    padding-top: 50px;
   }
-  .footer .form .list h5 {
+  .footer .list h5 {
     text-align: center;
   }
-  .footer .form .list ul li {
+  .footer .list ul li {
     display: flex;
     flex-direction: column;
     align-items: center;

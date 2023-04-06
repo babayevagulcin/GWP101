@@ -82,14 +82,23 @@
       }
     }
 
-    @media only screen and (max-width: 767px) {
-      flex-direction: column;
-      .hero-banner{
-        width: 100%;
-      }
-      .hero-banner-img{
+  }
+  @media only screen and (max-width: 767px) {
+   .hero{
+    flex-direction: column;
+    .hero-banner{
+      width: 100%;
+      img{
         width: 100%;
       }
     }
+    .hero-banner-img{
+      width: 100%;
+      img{
+        width: 100%;
+  
+      }
+    }
+   }
   }
 }
